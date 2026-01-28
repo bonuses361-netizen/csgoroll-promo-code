@@ -262,6 +262,105 @@ strong {
     margin-left: 20px;
 }
 
+/* Language Switcher */
+.wp-lang-switcher {
+    position: relative;
+    margin-left: 15px;
+}
+
+.wp-lang-switcher__current {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: var(--background-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.wp-lang-switcher__current:hover {
+    border-color: var(--primary-color);
+    color: var(--text-primary);
+}
+
+.wp-lang-switcher__flag {
+    font-size: 1.1rem;
+}
+
+.wp-lang-switcher__arrow {
+    width: 12px;
+    height: 12px;
+    transition: transform var(--transition-fast);
+}
+
+.wp-lang-switcher:hover .wp-lang-switcher__arrow {
+    transform: rotate(180deg);
+}
+
+.wp-lang-switcher__dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    min-width: 160px;
+    background: var(--background-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all var(--transition-fast);
+    z-index: 1001;
+}
+
+.wp-lang-switcher:hover .wp-lang-switcher__dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.wp-lang-switcher__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.wp-lang-switcher__link:hover {
+    background: var(--background-tertiary);
+    color: var(--text-primary);
+}
+
+.wp-lang-switcher__link--active {
+    color: var(--primary-color);
+    background: rgba(229, 57, 53, 0.1);
+}
+
+@media (max-width: 992px) {
+    .wp-lang-switcher {
+        margin: 20px 0 0 0;
+    }
+    
+    .wp-lang-switcher__dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        margin-top: 10px;
+        box-shadow: none;
+    }
+}
+
 /* Mobile Menu Toggle */
 .wp-menu-toggle {
     display: none;
