@@ -219,17 +219,17 @@
     </footer>
 
     <!-- Sticky Promo Popup -->
-    <div class="wp-sticky-promo" id="stickyPromo">
-        <div class="wp-sticky-promo__inner">
-            <div class="wp-sticky-promo__bonus">
-                <span class="wp-sticky-promo__bonus-icon">🎁</span>
+    <div id="stickyPromo" style="position:fixed!important;bottom:0!important;left:0!important;right:0!important;background:rgba(13,13,15,0.98)!important;border-top:1px solid #2a2a30!important;padding:15px 20px!important;z-index:999999!important;box-shadow:0 -4px 20px rgba(0,0,0,0.5)!important;">
+        <div style="display:flex!important;align-items:center!important;justify-content:center!important;gap:30px!important;max-width:1200px!important;margin:0 auto!important;flex-wrap:wrap!important;">
+            <div style="display:flex!important;align-items:center!important;gap:12px!important;padding:10px 20px!important;border:2px solid #e53935!important;border-radius:50px!important;color:#e53935!important;font-weight:600!important;font-size:0.95rem!important;">
+                <span style="font-size:1.2rem!important;">🎁</span>
                 <span>3 Free Cases + 5% Bonus</span>
             </div>
-            <div class="wp-sticky-promo__code-wrapper">
-                <span class="wp-sticky-promo__code">GET3BOXES</span>
-                <button class="wp-sticky-promo__copy" id="stickyPromoyCopy" onclick="copyPromoCode()">Copy</button>
+            <div style="display:flex!important;align-items:center!important;background:#1e1e24!important;border:1px solid #2a2a30!important;border-radius:8px!important;overflow:hidden!important;">
+                <span style="padding:12px 20px!important;font-family:monospace!important;font-size:1.1rem!important;font-weight:700!important;color:#fff!important;letter-spacing:0.05em!important;">GET3BOXES</span>
+                <button id="stickyPromoCopy" onclick="copyPromoCode()" style="padding:12px 20px!important;background:#141418!important;border:none!important;border-left:1px solid #2a2a30!important;color:#a0a0a0!important;font-size:0.9rem!important;font-weight:500!important;cursor:pointer!important;">Copy</button>
             </div>
-            <a href="https://www.csgoroll.gg/r/get3boxes" class="wp-sticky-promo__cta" rel="nofollow noopener" target="_blank">Claim Bonus</a>
+            <a href="https://www.csgoroll.gg/r/get3boxes" rel="nofollow noopener" target="_blank" style="padding:14px 28px!important;background:#f5c518!important;color:#000!important;font-size:1rem!important;font-weight:700!important;text-decoration:none!important;border-radius:8px!important;">Claim Bonus</a>
         </div>
     </div>
 
@@ -238,12 +238,12 @@
     <script>
         function copyPromoCode() {
             navigator.clipboard.writeText('GET3BOXES').then(function() {
-                var btn = document.getElementById('stickyPromoyCopy');
+                var btn = document.getElementById('stickyPromoCopy');
                 btn.textContent = 'Copied!';
-                btn.classList.add('wp-sticky-promo__copy--copied');
+                btn.style.color = '#4caf50';
                 setTimeout(function() {
                     btn.textContent = 'Copy';
-                    btn.classList.remove('wp-sticky-promo__copy--copied');
+                    btn.style.color = '#a0a0a0';
                 }, 2000);
             });
         }
