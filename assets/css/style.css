@@ -1517,6 +1517,75 @@ strong {
 }
 
 /* ==========================================================================
+   Latest Winners
+   ========================================================================== */
+.wp-winners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.wp-winner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    background: var(--background-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    transition: all var(--transition-fast);
+}
+
+.wp-winner:hover {
+    border-color: rgba(229, 57, 53, 0.3);
+    transform: translateY(-2px);
+}
+
+.wp-winner__game {
+    font-size: 1.2rem;
+    min-width: 30px;
+}
+
+.wp-winner__user {
+    font-weight: 600;
+    color: var(--text-primary);
+    min-width: 80px;
+}
+
+.wp-winner__item {
+    flex: 1;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.wp-winner__value {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+    .wp-winners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .wp-winners {
+        grid-template-columns: 1fr;
+    }
+    
+    .wp-winner {
+        flex-wrap: wrap;
+    }
+    
+    .wp-winner__item {
+        width: 100%;
+        order: 3;
+        margin-top: 5px;
+    }
+}
+
+/* ==========================================================================
    Sticky Promo Popup
    ========================================================================== */
 .wp-sticky-promo {
