@@ -283,7 +283,35 @@
         </div>
     </footer>
 
+    <!-- Sticky Promo Popup -->
+    <div class="wp-sticky-promo" id="stickyPromo">
+        <div class="wp-sticky-promo__inner">
+            <div class="wp-sticky-promo__bonus">
+                <span class="wp-sticky-promo__bonus-icon">🎁</span>
+                <span>3 Free Cases + 5% Bonus</span>
+            </div>
+            <div class="wp-sticky-promo__code-wrapper">
+                <span class="wp-sticky-promo__code">GET3BOXES</span>
+                <button class="wp-sticky-promo__copy" id="stickyPromoyCopy" onclick="copyPromoCode()">Copy</button>
+            </div>
+            <a href="https://www.csgoroll.gg/r/get3boxes" class="wp-sticky-promo__cta" rel="nofollow noopener" target="_blank">Claim Bonus</a>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script>
+        function copyPromoCode() {
+            navigator.clipboard.writeText('GET3BOXES').then(function() {
+                var btn = document.getElementById('stickyPromoyCopy');
+                btn.textContent = 'Copied!';
+                btn.classList.add('wp-sticky-promo__copy--copied');
+                setTimeout(function() {
+                    btn.textContent = 'Copy';
+                    btn.classList.remove('wp-sticky-promo__copy--copied');
+                }, 2000);
+            });
+        }
+    </script>
 </body>
 </html>
