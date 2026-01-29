@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- Main English Pages -->
+    <url>
+        <loc>https://csgorollbonus.com/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://csgorollbonus.com/de/"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://csgorollbonus.com/se/"/>
+        <xhtml:link rel="alternate" hreflang="he" href="https://csgorollbonus.com/il/"/>
+        <xhtml:link rel="alternate" hreflang="en-GB" href="https://csgorollbonus.com/uk/"/>
+        <xhtml:link rel="alternate" hreflang="lt" href="https://csgorollbonus.com/lt/"/>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://csgorollbonus.com/fi/"/>
+        <xhtml:link rel="alternate" hreflang="no" href="https://csgorollbonus.com/no/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://csgorollbonus.com/ro/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://csgorollbonus.com/fr/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://csgorollbonus.com/pl/"/>
+        <xhtml:link rel="alternate" hreflang="en-CA" href="https://csgorollbonus.com/ca/"/>
+        <xhtml:link rel="alternate" hreflang="da" href="https://csgorollbonus.com/dk/"/>
+        <xhtml:link rel="alternate" hreflang="lv" href="https://csgorollbonus.com/lv/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://csgorollbonus.com/pt/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <url>
+        <loc>https://csgorollbonus.com/about</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://csgorollbonus.com/contact</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://csgorollbonus.com/terms</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    <!-- German (DE) -->
+    <url>
+        <loc>https://csgorollbonus.com/de/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://csgorollbonus.com/de/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Swedish (SE) -->
+    <url>
+        <loc>https://csgorollbonus.com/se/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://csgorollbonus.com/se/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Hebrew (IL) -->
+    <url>
+        <loc>https://csgorollbonus.com/il/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="he" href="https://csgorollbonus.com/il/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- English UK -->
+    <url>
+        <loc>https://csgorollbonus.com/uk/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="en-GB" href="https://csgorollbonus.com/uk/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Lithuanian (LT) -->
+    <url>
+        <loc>https://csgorollbonus.com/lt/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="lt" href="https://csgorollbonus.com/lt/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Finnish (FI) -->
+    <url>
+        <loc>https://csgorollbonus.com/fi/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://csgorollbonus.com/fi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Norwegian (NO) -->
+    <url>
+        <loc>https://csgorollbonus.com/no/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="no" href="https://csgorollbonus.com/no/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Romanian (RO) -->
+    <url>
+        <loc>https://csgorollbonus.com/ro/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://csgorollbonus.com/ro/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- French (FR) -->
+    <url>
+        <loc>https://csgorollbonus.com/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://csgorollbonus.com/fr/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Polish (PL) -->
+    <url>
+        <loc>https://csgorollbonus.com/pl/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://csgorollbonus.com/pl/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- English Canada (CA) -->
+    <url>
+        <loc>https://csgorollbonus.com/ca/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="en-CA" href="https://csgorollbonus.com/ca/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Danish (DK) -->
+    <url>
+        <loc>https://csgorollbonus.com/dk/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="da" href="https://csgorollbonus.com/dk/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Latvian (LV) -->
+    <url>
+        <loc>https://csgorollbonus.com/lv/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="lv" href="https://csgorollbonus.com/lv/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Portuguese (PT) -->
+    <url>
+        <loc>https://csgorollbonus.com/pt/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://csgorollbonus.com/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://csgorollbonus.com/pt/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://csgorollbonus.com/"/>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+</urlset>
