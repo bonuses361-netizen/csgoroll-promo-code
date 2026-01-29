@@ -444,10 +444,23 @@ li {
     justify-content: center;
     gap: 15px;
     background: var(--bg-darker);
-    border: 1px dashed var(--primary-color);
+    border: 2px dashed var(--primary-color);
     border-radius: var(--border-radius);
     padding: 15px 25px;
     margin: 15px 0;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+}
+
+.promo-code:hover {
+    border-color: var(--primary-hover);
+    background: rgba(245, 166, 35, 0.05);
+    transform: scale(1.02);
+}
+
+.promo-code:active {
+    transform: scale(0.98);
 }
 
 .promo-code-text {
@@ -456,6 +469,37 @@ li {
     color: var(--primary-color);
     font-family: monospace;
     letter-spacing: 2px;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+}
+
+.promo-code-text:hover {
+    color: #fff;
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Copy notification tooltip */
+.copy-notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100px);
+    background: var(--success-color);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    z-index: 10000;
+    opacity: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+}
+
+.copy-notification.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
 }
 
 .copy-btn {

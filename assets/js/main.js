@@ -140,13 +140,46 @@
         // Copy to clipboard
         copyToClipboard(CONFIG.promoCode);
         
-        // Show visual feedback
+        // Show notification
+        showCopyNotification();
+        
+        // Show visual feedback on element
         showCopyFeedback(element);
         
         // Redirect after short delay
         setTimeout(() => {
             window.open(CONFIG.affiliateLink, '_blank', 'noopener,noreferrer');
-        }, 300);
+        }, 500);
+    }
+
+    /**
+     * Show copy notification popup
+     */
+    function showCopyNotification() {
+        // Remove existing notification if any
+        const existing = document.querySelector('.copy-notification');
+        if (existing) {
+            existing.remove();
+        }
+        
+        // Create notification
+        const notification = document.createElement('div');
+        notification.className = 'copy-notification';
+        notification.innerHTML = '✓ Code copied! Redirecting to CSGORoll...';
+        document.body.appendChild(notification);
+        
+        // Show notification
+        setTimeout(() => {
+            notification.classList.add('show');
+        }, 10);
+        
+        // Hide and remove notification
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => {
+                notification.remove();
+            }, 300);
+        }, 2000);
     }
 
     /**
