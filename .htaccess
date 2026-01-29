@@ -1,44 +1,7 @@
 # CSGORoll Bonus - Apache Configuration
 # ==========================================
 
-RewriteEngine On
-
-# ==========================================
-# Prevent redirect loops
-# ==========================================
-RewriteCond %{ENV:REDIRECT_STATUS} 200
-RewriteRule ^ - [L]
-
-# ==========================================
-# Force HTTPS (only if not already HTTPS)
-# ==========================================
-RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP:X-Forwarded-Proto} !=https
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-
-# ==========================================
-# Remove www (canonical non-www version)
-# ==========================================
-RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
-
-# ==========================================
-# Directory Index
-# ==========================================
 DirectoryIndex index.html index.htm
-
-# ==========================================
-# Remove .html extension
-# ==========================================
-# Redirect /page.html to /page
-RewriteCond %{THE_REQUEST} \s/([^.]+)\.html[\s?] [NC]
-RewriteRule ^ /%1 [R=301,L]
-
-# Internally rewrite /page to /page.html
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^([^/]+)/?$ $1.html [L]
 
 # ==========================================
 # Caching
@@ -53,7 +16,6 @@ RewriteRule ^([^/]+)/?$ $1.html [L]
     ExpiresByType image/png "access plus 1 year"
     ExpiresByType image/gif "access plus 1 year"
     ExpiresByType image/webp "access plus 1 year"
-    ExpiresByType image/svg+xml "access plus 1 year"
 </IfModule>
 
 # ==========================================
@@ -64,7 +26,6 @@ RewriteRule ^([^/]+)/?$ $1.html [L]
     AddOutputFilterByType DEFLATE text/html
     AddOutputFilterByType DEFLATE text/css
     AddOutputFilterByType DEFLATE application/javascript
-    AddOutputFilterByType DEFLATE application/json
 </IfModule>
 
 # ==========================================
