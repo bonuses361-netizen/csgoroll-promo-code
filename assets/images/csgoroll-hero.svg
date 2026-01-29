@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f26"/>
+      <stop offset="100%" style="stop-color:#0f1419"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5a623"/>
+      <stop offset="100%" style="stop-color:#e6951a"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946"/>
+      <stop offset="100%" style="stop-color:#c62f3b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="400" fill="url(#bgGrad)" rx="20"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="400" cy="80" r="60" fill="none" stroke="#f5a623" stroke-width="1" opacity="0.2"/>
+  <circle cx="420" cy="100" r="40" fill="none" stroke="#f5a623" stroke-width="1" opacity="0.3"/>
+  <circle cx="100" cy="320" r="50" fill="none" stroke="#e63946" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Main box/case illustration -->
+  <g transform="translate(150, 100)">
+    <!-- Box body -->
+    <rect x="0" y="50" width="200" height="150" fill="#252b33" stroke="url(#goldGrad)" stroke-width="3" rx="10"/>
+    <!-- Box lid -->
+    <path d="M0 50 L100 0 L200 50 Z" fill="#1a1f26" stroke="url(#goldGrad)" stroke-width="3"/>
+    <!-- Glow effect -->
+    <ellipse cx="100" cy="125" rx="60" ry="40" fill="url(#goldGrad)" opacity="0.3" filter="url(#glow)"/>
+    <!-- Question mark -->
+    <text x="100" y="150" font-family="Arial Black, Arial, sans-serif" font-size="60" fill="url(#goldGrad)" text-anchor="middle" filter="url(#glow)">?</text>
+  </g>
+  
+  <!-- Floating items -->
+  <g filter="url(#glow)">
+    <!-- Star 1 -->
+    <polygon points="80,80 85,95 100,95 88,105 93,120 80,110 67,120 72,105 60,95 75,95" fill="url(#goldGrad)"/>
+    <!-- Star 2 -->
+    <polygon points="420,280 423,290 435,290 426,297 429,307 420,300 411,307 414,297 405,290 417,290" fill="url(#goldGrad)"/>
+  </g>
+  
+  <!-- Coins -->
+  <circle cx="70" cy="200" r="20" fill="url(#goldGrad)" stroke="#000" stroke-width="2"/>
+  <text x="70" y="207" font-family="Arial" font-size="16" fill="#000" text-anchor="middle" font-weight="bold">$</text>
+  
+  <circle cx="430" cy="180" r="15" fill="url(#goldGrad)" stroke="#000" stroke-width="2"/>
+  <text x="430" y="185" font-family="Arial" font-size="12" fill="#000" text-anchor="middle" font-weight="bold">$</text>
+  
+  <!-- Promo text -->
+  <rect x="100" y="300" width="300" height="60" fill="url(#redGrad)" rx="10" filter="url(#glow)"/>
+  <text x="250" y="325" font-family="Arial Black, Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle">PROMO CODE</text>
+  <text x="250" y="348" font-family="Courier New, monospace" font-size="18" fill="#fff" text-anchor="middle" font-weight="bold">GET3BOXES</text>
+</svg>
