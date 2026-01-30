@@ -282,7 +282,7 @@
         const winnerCards = document.querySelectorAll('.winner-card');
         if (!winnerCards.length) return;
 
-        const games = ['Crash', 'Roulette', 'Dice', 'Coinflip', 'Plinko', 'Cases', 'Upgrader', 'Case Battles'];
+        const games = ['Case Battles', 'Arms Dealer', 'Case Royale', 'Roll', 'Case Opening', "Cluck 'N' Boom", 'Crash', 'Plinko', 'Dice'];
         const amounts = ['$25.50', '$142.30', '$87.60', '$315.40', '$56.80', '$198.20', '$423.10', '$67.90', '$892.50', '$45.30'];
         
         const randomIndex = Math.floor(Math.random() * (winnerCards.length / 2));
