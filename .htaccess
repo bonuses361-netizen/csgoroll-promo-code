@@ -1,17 +1,14 @@
 # CSGORoll Bonus - Apache Configuration
 # ==========================================
 
-DirectoryIndex index.html index.htm
+# Redirect www to non-www (MUST BE FIRST)
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 # ==========================================
-# Redirect www to non-www
-# ==========================================
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
-    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
-</IfModule>
+DirectoryIndex index.html index.htm
 
 # ==========================================
 # Caching
