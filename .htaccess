@@ -8,8 +8,9 @@ DirectoryIndex index.html index.htm
 # ==========================================
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteCond %{HTTP_HOST} ^www\.csgorollbonus\.com$ [NC]
-    RewriteRule ^(.*)$ https://csgorollbonus.com/$1 [R=301,L]
+    RewriteBase /
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 </IfModule>
 
 # ==========================================
