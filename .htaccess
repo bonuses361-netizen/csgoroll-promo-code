@@ -4,6 +4,15 @@
 DirectoryIndex index.html index.htm
 
 # ==========================================
+# Redirect www to non-www
+# ==========================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^www\.csgorollbonus\.com$ [NC]
+    RewriteRule ^(.*)$ https://csgorollbonus.com/$1 [R=301,L]
+</IfModule>
+
+# ==========================================
 # Caching
 # ==========================================
 <IfModule mod_expires.c>
